@@ -1,0 +1,39 @@
+<div class="container">
+   <h1>crete new post</h1>
+
+   <div class="row p-4">
+       <div class="col-md-10">
+           <form action="/admin/post/create" method="Post" enctype="multipart/form-data">
+
+           <div class="form-group">
+               <label for="title">Title</label>
+               <input type="text" class="form-control" name="title" id="title" placeholder="title">
+           </div>
+            <div class="form-group">
+                    <label for="file">File Upload</label>
+                    <input type="file" class="form-control" id="file" name="uploadedFile">
+                </div>
+           <div class="form-group">
+               <label for="status">status</label>
+               <select name="status" id="status" class="form-control">
+                   <option value="public">public</option>
+               </select>
+           </div>
+
+           <div class="form-check ml-3">
+               <label for="allowComments">
+                   <input type="checkbox" class="form-check-input" id="allowComments" name="allowComments">
+                   allow comments
+               </label>
+           </div>
+
+           <div>
+               <label for="description">description</label>
+               <textarea name="description" id="description" class="form-control" placeholder="description" rows="10"></textarea>
+           </div>
+
+           <button class="btn btn-outline-success btn-lg" type="submit">create post</button>
+           </form>
+       </div>
+   </div>
+</div>
